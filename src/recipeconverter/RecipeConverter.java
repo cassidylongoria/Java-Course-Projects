@@ -38,5 +38,7 @@ public class RecipeConverter {
         System.out.printf("Flour: %.2f cups%n", totalFlour);
         
         System.out.println("\nGood luck! Have fun!");
+        
+        keyboard.close();
     }
 }
