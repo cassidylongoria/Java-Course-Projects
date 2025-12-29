@@ -18,6 +18,12 @@ public class Rainfall {
         }      
     }
     
+    // Mapes 0-based month indices (0=January ... 11=December) to month names
+    private static final String[] Month_Names = {
+        "January", "February", "March", "April", "May", "June", 
+        "July", "August", "September", "October", "November", "December"
+    };
+    
     // Calculate Total Rainfall
     public double getTotalRainfall() {
         double total = 0;
@@ -33,24 +39,24 @@ public class Rainfall {
     }
 
     // Highest Monthly Rainfall
-    public int getMonthWithMostRain() {
+    public String getMonthWithMostRain() {
         int maxMonth = 0;
         for (int i = 1; i < rainfall.length; i++) {
             if (rainfall[i] > rainfall[maxMonth]) {
                 maxMonth = i;
             }
         }
-        return maxMonth + 1;
+        return Month_Names[maxMonth];
     }
     
     // Lowest Monthly Rainfall
-    public int getMonthWithLeastRain() {
+    public String getMonthWithLeastRain() {
         int minMonth = 0;
         for (int i = 1; i < rainfall.length; i ++) {
             if (rainfall[i] < rainfall[minMonth]) {
                 minMonth = i;
             }
         }
-        return minMonth + 1;
+        return Month_Names[minMonth];
     }
 }

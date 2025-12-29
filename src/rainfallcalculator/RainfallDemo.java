@@ -30,10 +30,10 @@ public class RainfallDemo {
     System.out.println("_-_-_-_-_-_-_-_-_-_-_-_-_-_"
             + "\n\tCalcuations"
             +  "\n-_-_-_-_-_-_-_-_-_-_-_-_-_-");
-    System.out.printf("\nTotal rainfaill for the year: %.2f inches\n", rainfallData.getTotalRainfall());
-    System.out.printf("Average monthly rainfall: %.2f inches", rainfallData.getAverageRainfall());
-    System.out.printf("\nThe month with the highest average rainfall was " + rainfallData.getMonthWithMostRain());
-    System.out.printf("\nThe month with the lowest average rainfall was " + rainfallData.getMonthWithLeastRain());
+    System.out.printf("\nTotal rainfall for the year: %.2f inches", rainfallData.getTotalRainfall());
+    System.out.printf("\nThe average monthly rainfall was %.2f inches", rainfallData.getAverageRainfall());
+    System.out.printf("\n" + rainfallData.getMonthWithMostRain() + " had the highest average rainfall");
+    System.out.printf("\n" + rainfallData.getMonthWithLeastRain() + " had the lowest average rainfall");
     
     input.close();
     }

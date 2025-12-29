@@ -1,0 +1,6 @@
+Hello!
+This is my example text file.
+Its purpose is to test FilePreview.java.
+If you are seeing this, that means it worked!
+It will only show the first five lines of a file. Anything after this you will not see!
+Bye bye~
